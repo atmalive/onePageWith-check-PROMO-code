@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 10px;
+
+    /* https://cssgradient.io/gradient-backgrounds/ */
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.quiz {
+    position: relative;
+    padding: 1.4rem 0 0 0;
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow:		3.8px 4.1px 26px -28px rgba(0, 0, 0, 0.01),
+    7.6px 8.2px 49.9px -28px rgba(0, 0, 0, 0.019),
+    11.6px 12.6px 71.2px -28px rgba(0, 0, 0, 0.026),
+    16.2px 17.5px 89.4px -28px rgba(0, 0, 0, 0.031),
+    21.9px 23.6px 104.5px -28px rgba(0, 0, 0, 0.035),
+    30px 32.3px 121.9px -28px rgba(0, 0, 0, 0.039),
+    43.4px 46.8px 160px -28px rgba(0, 0, 0, 0.043),
+    76px 82px 221px -28px rgba(0, 0, 0, 0.05)
+;
+    width: 800px;
+    max-width: 98vw;
+    overflow: auto;
+    margin-inline: auto;
+    /*padding-top: auto;*/
+}
+
+.quiz-header, .quiz-list{
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1.0rem;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+.titlePhone {
+    font-size: 1.0rem;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+.quiz-list {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.quiz-submit {
+    margin-top: 1.4rem;
+    height: 70px;
+    line-height: 70px;
+}
+
+.submit {
+    background-color: #41afa6;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+
+}
+
+.submit:hover {
+    background-color: rgb(41, 143, 121);
+}
+
+.submit:focus {
+    outline: none;
+    background-color: #37968e;
+}
+
+.submit.next {
+    background-color: #000000;
+}
+
+.submit.next:hover {
+    background-color: #222222;
+}
+
+.submit.next:focus {
+    outline: none;
+    background-color: #444444;
+}
